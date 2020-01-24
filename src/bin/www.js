@@ -3,6 +3,7 @@
 /**
  * Module dependencies.
  */
+import 'source-map-support/register';
 import '../config/dotenv';
 import app from '../app';
 import debug from 'debug';
