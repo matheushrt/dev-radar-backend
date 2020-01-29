@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "start": "node dist/bin/www",
-    "build": "babel -w src -d dist",
+    "build": "babel src -d dist",
+    "build:watch": "npm run build -- --watch",
     "nodemon": "nodemon dist/bin/www",
-    "dev": "npm-run-all --parallel build nodemon"
+    "dev": "npm-run-all --parallel build:watch nodemon"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
